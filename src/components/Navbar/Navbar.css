@@ -1,12 +1,18 @@
 .navbar{
+    position: fixed;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem auto;
+    margin: 1rem 0;
     width: 95%;
     height: 70px;
+    background-color: white;
     box-shadow: 0px 0px 20px -8px #000000;
-    border-radius: 15px;
+    border-radius: 15px; 
+    z-index: 1;
 }
 
 .navbar-logo img{
@@ -20,7 +26,6 @@
     margin-left: auto;
     margin-right: 3rem;
     list-style-type: none; 
-    z-index: 99;
 }
 
 .navbar-menu li{
@@ -39,7 +44,7 @@
 }
 
 .navbar-menu a:hover{
-    background-color: rgb(47, 53, 51);
+    background-color: rgba(47, 53, 51, 0.767);
     color: white;
     transition: 0.2s ease-in-out;
     border-radius: 5px;
@@ -56,7 +61,7 @@ button{
 }
 
 button:hover{
-    background-color: rgb(47, 53, 51);
+    background-color: rgba(47, 53, 51, 0.767);
     color: white;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
@@ -67,20 +72,24 @@ button:hover{
 }
 
 @media screen and (max-width:1024px){
+
     .navbar-menu{
        flex-direction: column;
        align-items: stretch;
        width: 100%;
        position: absolute;
-       top:-100%;
-       left:0;
+       top:0;
+       left:-110%;
        padding: 6rem 0 0.5rem 0 ;
+       background-color: white;
+       border-radius: 15px;
+       box-shadow: 0px 0px 20px -8px #000000;
        z-index: -1;
     }
 
     .navbar-menu.mobile{
-        top:0;
-        transition: 0.3s ease-in-out;
+        left: 0;
+        transition: 0.2s ease-in-out;
     }
 
     .navbar-menu a{
@@ -97,7 +106,7 @@ button:hover{
     }
 
     button{
-        margin-left: 0px;
+        margin-left: 0;
         width: 100%;
         padding: 1.5rem;
     }
@@ -109,5 +118,4 @@ button:hover{
         padding: 1rem;
         cursor: pointer;
     }
-
 }
