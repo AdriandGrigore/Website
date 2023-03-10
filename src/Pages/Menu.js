@@ -1,14 +1,13 @@
 import React from 'react'
 import Navbar from "../components/Navbar/Navbar"
-import Hero from '../components/Hero/Hero'
 
-function Services() {
+function Menu() {
   return (
     <>
       <Navbar/>
-      <div>Services</div>
+      <div>Menu</div>
     </> 
   )
 }
 
-export default Services
+export default Menu
