@@ -5,7 +5,7 @@ import {CiHome,CiCircleInfo,CiMemoPad} from "react-icons/ci"
 import {RxHamburgerMenu} from "react-icons/rx"
 import {AiOutlineClose} from "react-icons/ai"
 import {MdOutlineRestaurantMenu} from "react-icons/md"
-import { Link } from 'react-router-dom'
+import { NavHashLink as Link } from 'react-router-hash-link'
 
 function Navbar() {
   const [clicked, setClicked]=useState(false)
@@ -24,7 +24,6 @@ function Navbar() {
     }
   }, [])
   
-  console.log(scrollPosition)
   return (
     <nav className={isVisibile? "navbar" : "navbar navbar-hidden"}>
       <div className="navbar-logo-container">
@@ -35,16 +34,16 @@ function Navbar() {
       </div>
       <ul className={clicked?"navbar-menu mobile":"navbar-menu"}>
         <li>
-          <Link to="/"><CiHome/> Home</Link>
+         <Link to="/#"><CiHome/> Home</Link>
         </li>
         <li>
-          <Link to="/about"><CiCircleInfo/> About</Link>
+          <Link to="/#about"><CiCircleInfo/> About</Link>
         </li>
         <li>
-          <Link to="/menu"><MdOutlineRestaurantMenu/> Menu</Link>
+          <Link to="/menu#"><MdOutlineRestaurantMenu/> Menu</Link>
         </li>
         <li>
-          <Link to="/contact"><CiMemoPad/> Contact</Link>
+          <Link to="/contact#"><CiMemoPad/> Contact</Link>
         </li>
         <button>Sign Up</button>
       </ul>

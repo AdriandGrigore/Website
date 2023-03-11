@@ -8,7 +8,7 @@ import "../ChefList/ChefList.css"
 
 function ChefList() {
     return (
-        <div className='chef-section-container' id="chefs">
+        <section className='chef-section-container' id="chefs">
             <h2>Meet our chefs</h2>
             <div className='chef-section-grid-container'>
                 <img src={chef1} alt="chefPhoto" loading='lazy'/>
@@ -39,7 +39,7 @@ function ChefList() {
                     <a href="/contact">Book a meeting</a>
                 </div>
             </div>
-        </div>
+        </section>
 
     )
 }

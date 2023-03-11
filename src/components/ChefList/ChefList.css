@@ -1,14 +1,12 @@
 .chef-section-container{
     background-color: rgba(180, 176, 176, 0.192);
-    padding-bottom: 1rem;
-
 }
 
 .chef-section-container h2{
     font-size: 2.5rem;
+    padding: 2rem ;
     color: rgb(231, 143, 28);
     background-color:  rgb(64, 62, 66);
-    padding: 2rem ;
     letter-spacing: 5px;
     text-decoration:overline;
 }
@@ -43,7 +41,7 @@
 }
 
 .chef-description h3{
-    color: rgb(231, 143, 28);
+    color: rgb(241, 143, 15);
     font-size: 2rem;
     font-weight: bolder;
     letter-spacing: 3px;
