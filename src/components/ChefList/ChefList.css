@@ -2,15 +2,6 @@
     background-color: rgba(180, 176, 176, 0.192);
 }
 
-.chef-section-container h2{
-    font-size: 2.5rem;
-    padding: 2rem ;
-    color: rgb(231, 143, 28);
-    background-color:  rgb(64, 62, 66);
-    letter-spacing: 5px;
-    text-decoration:overline;
-}
-
 .chef-section-grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,11 +92,6 @@
 
 @media screen and (max-width:640px){
     
-    .chef-section-container h2{
-        padding: 1.5rem ;
-        font-size: 2rem;
-    }
-
     .chef-description{
         width: 80%;
     }
@@ -126,10 +112,7 @@
 }
 
 @media screen and (max-width:330px){
-    .chef-section-container h2{
-        padding: 1.5rem ;
-        font-size: 1.3rem;
-    }
+
     .chef-section-grid-container img{
         width: 250px;
         height: 250px;

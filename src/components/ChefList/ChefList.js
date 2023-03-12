@@ -8,8 +8,7 @@ import "../ChefList/ChefList.css"
 
 function ChefList() {
     return (
-        <section className='chef-section-container' id="chefs">
-            <h2>Meet our chefs</h2>
+        <section className='chef-section-container' >
             <div className='chef-section-grid-container'>
                 <img src={chef1} alt="chefPhoto" loading='lazy'/>
                 <div className='chef-description'>
