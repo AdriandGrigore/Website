@@ -1,8 +1,8 @@
-.chef-section-container{
+.chef-section{
     background-color: rgba(180, 176, 176, 0.192);
 }
 
-.chef-section-grid-container{
+.chef-grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -12,23 +12,24 @@
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3) ;
 }
 
-.chef-section-grid-container div:nth-child(4){
+.chef-grid-container div:nth-child(4){
     grid-column:1/2;
     grid-row:2/3;
 }
 
-.chef-section-grid-container img{
+.chef-grid-container img{
     display: block;
     margin: auto;
     width: 500px;
     height: 500px;
-    border-radius: 250px;
+    border-radius: 50%;
+    object-fit:cover;
 }
 
 .chef-description{
     width: 95%;
     margin:auto;
-    color:rgba(49, 49, 44, 0.911)
+    color:rgb(56, 66, 71)
 }
 
 .chef-description h3{
@@ -59,7 +60,7 @@
     display: block;
     width: fit-content;
     padding: 0.6rem 1rem;
-    margin:2rem auto;
+    margin:1.5rem auto;
     background-color: rgb(206, 201, 201);
     color:black;
     border-radius: 20px;
@@ -72,20 +73,20 @@
     background-color: rgb(173, 170, 170);
 }
 
-@media screen and (max-width:1135px){
+@media screen and (max-width:1260px){
     
     .chef-description{
         width: 80%;
     }
 
-    .chef-section-grid-container{
+    .chef-grid-container{
         grid-template-columns: 1fr;
         width: 100%;
         padding: 2rem 0;
         box-shadow: none;
     }
 
-    .chef-section-grid-container div:nth-child(4){
+    .chef-grid-container div:nth-child(4){
         grid-row: 4/5;
     }
 }
@@ -97,25 +98,27 @@
     }
     .chef-description p{
         font-size: 1rem;
-        line-height: 2.2rem;
+        line-height: 1.5rem;
     }
     
     .chef-description h3{
         font-size: 1.5rem;
+        padding: 0.5rem;
     }
 
-    .chef-section-grid-container img{
-        width: 330px;
-        height: 330px;
-        border-radius: 50%;
+    .chef-grid-container img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .chef-description span{
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width:330px){
-
-    .chef-section-grid-container img{
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
+@media screen and (max-width:310px){
+    .chef-grid-container img{
+        width: 235px;
+        height: 235px;
     }
 }
